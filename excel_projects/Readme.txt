@@ -30,3 +30,5 @@ Pivot Tables:
 
 Dashboard:
 📊 Summarizes data through visual charts, showing how age, gender, and commuting distance influence bike purchases.
+
+[View the Excel file on Google Sheets](https://docs.google.com/spreadsheets/d/1oNZjW7_FJ-4mgltz-e2f1pK4Ygt5rR-MO7DF2Zkdqa4/edit?usp=sharing)
