@@ -1,5 +1,24 @@
+-- CREATE a new database
+CREATE SCHEMA IF NOT EXISTS world_layoffs;
+
 -- USE the world_layoffs database
 USE `world_layoffs`;
+
+-- Manually import the dataset using MySQL Workbench
+
+-- Instructions:
+-- 1. In MySQL Workbench, right-click the 'Tables' section.
+-- 2. Select 'Table Data Import Wizard' from the context menu.
+-- 3. Choose the CSV file that contains your data and click 'Next'.
+-- 4. Follow the prompts (Next, Next, Finish) to import the data.
+-- 5. After import, click 'Refresh' in the MySQL Workbench to see the data.
+-- 6. Run the following command to verify the data is in the table:
+--    SELECT * FROM layoffs LIMIT 10;
+
+-- CREATE a copy of the layoffs table
+CREATE TABLE IF NOT EXISTS layoffs_copy
+SELECT *
+FROM layoffs;
 
 -- SELECT all columns from the layoffs_copy table to view the data
 SELECT *
