@@ -1,66 +1,61 @@
-Credit Card Fraud Detection - Data Exploration
-This project performs exploratory data analysis (EDA) on a credit card transaction dataset to investigate fraudulent activity and understand key data patterns.
+Credit Card Fraud Detection - Exploratory Data Analysis
+This project focuses on analyzing a credit card transaction dataset to identify patterns and insights related to fraudulent transactions. It performs basic data preparation, exploratory data analysis (EDA), and visualizations.
 
-📊 Dataset
-The dataset used is the Credit Card Fraud Detection dataset made available by ULB. It contains transactions made by European cardholders in September 2013.
+📁 Dataset
+The dataset used (ccf_sampple.csv) contains records of credit card transactions with information such as transaction time, amount, merchant, location, and a fraud label.
 
-Total observations: 284,807
+📚 Libraries Used
+pandas – for data manipulation
 
-Features: 30 (anonymized)
+numpy – for numerical operations
 
-Class label: 0 for legitimate, 1 for fraud
+matplotlib.pyplot – for visualizations
 
-🧪 Objective
-The goal of this project is to:
+sklearn.model_selection – for splitting the dataset
 
-Understand the structure of the dataset
+🧪 Workflow Summary
+Data Loading
 
-Perform data cleaning and formatting
+The dataset is loaded into a pandas DataFrame from a CSV file.
 
-Identify correlations and potential indicators of fraud
+Train/Test Split
 
-Investigate name frequencies (where applicable) tied to fraud patterns
+70% of the dataset is used for training, and 30% is used for testing (all further analysis is performed on the test set).
 
-🔍 Techniques Used
-pandas for data loading and manipulation
+Preprocessing
 
-matplotlib and seaborn for visualizations
+Display settings are adjusted for easier data exploration.
 
-Grouping, filtering, and aggregation
+The gender column is standardized (F → Female, M → Male).
 
-Frequency analysis of features in fraudulent cases
+Exploratory Analysis
 
-📌 Key Findings
-Strong class imbalance: ~0.17% of transactions are fraudulent
+Fraud counts per state and per city.
 
-Certain feature distributions (like V14, V10) show outliers in fraud cases
+Density of fraud across the U.S. using a scatter plot.
 
-Patterns in names (when available) reveal individuals associated with multiple fraud instances
+Fraud transactions per category with a horizontal bar chart.
 
-📁 Files
-Data Exploration (credit card fraud).ipynb: Jupyter Notebook containing EDA steps and visualizations
+Attempt to calculate percentage of population involved in fraud (incomplete).
 
-Dataset assumed to be: creditcard.csv in the same folder
+📊 Visualizations
+Scatter Plot: Fraud density by geographic location using latitude/longitude.
 
-🚀 Future Work
-Feature engineering and outlier handling
+Bar Plot: Frequency of fraudulent transactions per purchase category.
 
-Model training with ML algorithms
+📝 Notes
+The test set contains 105,000 records across 24 columns.
 
-Expanding to other datasets: finance, healthcare, AML, etc.
+Fraud analysis includes city and state-level breakdowns.
 
-📚 Requirements
-Python 3.x
+Additional data cleaning and analysis (e.g., population-based fraud percentage) are a work in progress.
 
-Jupyter Notebook
+🔧 Future Work
+Clean and transform datetime columns for time-based analysis.
 
-pandas, numpy, matplotlib, seaborn
+Add geospatial mapping with libraries like folium or geopandas.
 
-Install dependencies with:
+Use machine learning models for predictive fraud detection.
 
-bash
-Copy
-Edit
-pip install pandas numpy matplotlib seaborn
-📎 Credits
-Dataset by ULB, available on Kaggle
+📌 Disclaimer
+This project is for learning and educational purposes. The dataset may be synthetic or anonymized.
