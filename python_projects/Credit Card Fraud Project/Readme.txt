@@ -2,11 +2,7 @@ Credit Card Fraud Detection - Exploratory Data Analysis
 This project focuses on analyzing a credit card transaction dataset to identify patterns and insights related to fraudulent transactions. It performs basic data preparation, exploratory data analysis (EDA), and visualizations.
 
 📁 Dataset
-<<<<<<< HEAD
 The dataset used (fraudTest.csv) contains records of credit card transactions with information such as transaction time, amount, merchant, location, and a fraud label. Link to the dataset (https://www.kaggle.com/datasets/kartik2112/fraud-detection).
-=======
-The dataset used (ccf_sampple.csv) contains records of credit card transactions with information such as transaction time, amount, merchant, location, and a fraud label.
->>>>>>> origin/main
 
 📚 Libraries Used
 pandas – for data manipulation
@@ -44,25 +40,17 @@ Attempt to calculate percentage of population involved in fraud (incomplete).
 
 📊 Visualizations
 Scatter Plot: Fraud density by geographic location using latitude/longitude.
-
 Bar Plot: Frequency of fraudulent transactions per purchase category.
 
 📝 Notes
-<<<<<<< HEAD
 The test set contains 166,716 records across 24 columns.
-=======
 The test set contains 105,000 records across 24 columns.
->>>>>>> origin/main
-
 Fraud analysis includes city and state-level breakdowns.
-
 Additional data cleaning and analysis (e.g., population-based fraud percentage) are a work in progress.
 
 🔧 Future Work
 Clean and transform datetime columns for time-based analysis.
-
 Add geospatial mapping with libraries like folium or geopandas.
-
 Use machine learning models for predictive fraud detection.
 
 📌 Disclaimer
