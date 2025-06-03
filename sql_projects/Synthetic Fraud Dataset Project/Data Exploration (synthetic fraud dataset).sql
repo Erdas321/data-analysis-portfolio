@@ -30,7 +30,7 @@ CREATE TABLE fraud_det (
 );
 
 -- Load the transaction dataset from a local CSV file into the fraud_det table
-LOAD DATA LOCAL INFILE "D:/Data Analytics/Datasets/Anti-Money Laundering/sfd_fraud_1m.csv" 
+LOAD DATA LOCAL INFILE "sfd_fraud_1m.csv" 
 INTO TABLE fraud_det 
 FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"' 
